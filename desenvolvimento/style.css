@@ -1,0 +1,119 @@
+body{
+    background-color:#36384d;
+    font-family: 'Roboto', sans-serif;
+    color: #252843;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card_container{
+    display: flex;
+    width: 60vw;
+    border-radius: 20px;
+    background-color: white;
+    padding: 38px 16px;
+    justify-content: space-between;
+}
+
+.infos{
+    margin-left: 40px;
+}
+
+.infos h1{
+    font-size: 50px;
+}
+
+.infos ul{
+    list-style: none;
+    line-height: 32px;
+}
+
+.infos li{
+    position: relative;
+}
+
+.infos li::before{
+    position: absolute;
+    top: 0.2rem;
+    left: -2rem;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-image: url("/Projeto_with_ryan/assets/images/icon-success.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image img{
+    height: 450px;
+}
+
+.email_form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email_form .email_label{
+    font-size: small;
+    font-weight: bold;
+}
+
+.email_form input{
+    padding: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+}
+
+.button_sub{
+    background-color: #232742;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.button_sub:hover{
+    transform: scale(1.1);
+    transition:all 0.3s ease-in-out;
+}
+
+.label_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error_mensage{
+    color: red;
+    font-size: 0.8rem;
+}
+
+.email_form .input.invalido{
+    background: #ffe8e6;
+    border: 2px solid red;
+    color: red;
+}
+
+.thanks_page{
+    width: 450px;
+}
+
+.button_sub.thanks_button{
+    width: 100%;
+}
+
+.thanks_page .infos{
+    margin: 0 48px;
+}
